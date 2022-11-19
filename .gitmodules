@@ -1,0 +1,8 @@
+[submodule "glm"]
+	path = OpenGL/glm
+	url = git@github.com:g-truc/glm.git
+	branch = master
+[submodule "scripts"]
+	path = scripts
+	url = git@github.com:dengchenggang/OpenGLTestSrc.git
+	branch = master

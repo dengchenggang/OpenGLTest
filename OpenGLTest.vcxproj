@@ -71,8 +71,8 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>$(SolutionDir)\OpenGL\glm\;$(SolutionDir)\OpenGL\glad\include\;$(SolutionDir)\OpenGL\glfw-3.3.8.bin.WIN64\include\;$(IncludePath)</IncludePath>
-    <LibraryPath>$(SolutionDir)\OpenGL\glfw-3.3.8.bin.WIN64\lib-vc2022\;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(SolutionDir)\OpenCV\include\;$(SolutionDir)\OpenGL\glm\;$(SolutionDir)\OpenGL\glad\include\;$(SolutionDir)\OpenGL\glfw-3.3.8.bin.WIN64\include\;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)\OpenGL\glfw-3.3.8.bin.WIN64\lib-vc2022\;$(SolutionDir)\OpenCV\vc15\lib\;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -113,7 +113,8 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>glfw3.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>glfw3.lib;opengl32.lib;opencv_world460d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>msvcrt.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -723,7 +724,6 @@
     <ClInclude Include="scripts\OpenGLInteraface\COpenGLContext.h" />
     <ClInclude Include="scripts\OpenGLInteraface\OpenGL.h" />
     <ClInclude Include="scripts\OpenGLInteraface\Shader.h" />
-    <ClInclude Include="scripts\Test.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
@@ -735,7 +735,6 @@
     <ClCompile Include="scripts\OpenGLInteraface\camera\CCamera.cpp" />
     <ClCompile Include="scripts\OpenGLInteraface\COpenGLContext.cpp" />
     <ClCompile Include="scripts\OpenGLInteraface\Shader.cpp" />
-    <ClCompile Include="scripts\Test.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="OpenGL\glfw-3.3.8.bin.WIN64\docs\html\build_8dox.html" />

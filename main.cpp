@@ -9,7 +9,9 @@ int main(int argc, char *argv[]) {
     opengl->SetTexture1("./scripts/data/resources/textures/container.jpg");
     opengl->SetTexture2("./scripts/data/resources/textures/awesomeface.png");
     if (opengl->Init()) {
-        opengl->Update();
+        while (opengl->Update()) {
+
+        }
     }
     return 0;
 }

@@ -915,9 +915,6 @@
     <ClInclude Include="scripts\OpenGLInteraface\Shader.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="scripts\Test.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="scripts\Common\stb_image.h">
       <Filter>头文件</Filter>
     </ClInclude>
@@ -1806,9 +1803,6 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="scripts\OpenGLInteraface\Shader.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="scripts\Test.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="main.cpp">

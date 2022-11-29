@@ -1,13 +1,12 @@
-#include "scripts/OpenGLInteraface/COpenGLContext.h"
+#include "scripts/OpenGLInteraface/OpenGL2DRect/COpenGL2DRect.h"
 #include <iostream>
 
 
 int main(int argc, char *argv[]) {
-    auto opengl = std::make_shared<COpenGLRectangle>("Test");
-    opengl->SetVertextShader("./scripts/shader/testVertexShader.glsl");
-    opengl->SetFragmentShader("./scripts/shader/testFragmentShader.glsl");
-    opengl->SetTexture1("./scripts/data/resources/textures/container.jpg");
-    opengl->SetTexture2("./scripts/data/resources/textures/awesomeface.png");
+    auto opengl = std::make_shared<COpenGL2DRect>("Test");
+    opengl->SetVertextShader("./scripts/shader/vertex2DRectShader.glsl");
+    opengl->SetFragmentShader("./scripts/shader/fragment2DRectShader.glsl");
+    opengl->SetTexturePath("./scripts/data/resources/textures/container.jpg");
     if (opengl->Init()) {
         while (opengl->Update()) {
 

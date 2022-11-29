@@ -108,7 +108,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)\OpenGL\glm\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)\scripts\OpenGLInteraface\;$(SolutionDir)\OpenGL\glm\glm;$(SolutionDir)\scripts\data\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -723,6 +723,10 @@
     <ClInclude Include="scripts\OpenGLInteraface\camera\CCamera.h" />
     <ClInclude Include="scripts\OpenGLInteraface\COpenGLContext.h" />
     <ClInclude Include="scripts\OpenGLInteraface\OpenGL.h" />
+    <ClInclude Include="scripts\OpenGLInteraface\OpenGL2DRect\COpenGL2DRect.h" />
+    <ClInclude Include="scripts\OpenGLInteraface\OpenGL2DRect\COpenGL2DRectData.h" />
+    <ClInclude Include="scripts\OpenGLInteraface\OpenGLRectangle\COpenGLRectangle.h" />
+    <ClInclude Include="scripts\OpenGLInteraface\OpenGLTestBox\COpenGLTestBox.h" />
     <ClInclude Include="scripts\OpenGLInteraface\Shader.h" />
   </ItemGroup>
   <ItemGroup>
@@ -734,6 +738,9 @@
     <ClCompile Include="scripts\GameAI\Entity\MessageDispatch.cpp" />
     <ClCompile Include="scripts\OpenGLInteraface\camera\CCamera.cpp" />
     <ClCompile Include="scripts\OpenGLInteraface\COpenGLContext.cpp" />
+    <ClCompile Include="scripts\OpenGLInteraface\OpenGL2DRect\COpenGL2DRect.cpp" />
+    <ClCompile Include="scripts\OpenGLInteraface\OpenGLRectangle\COpenGLRectangle.cpp" />
+    <ClCompile Include="scripts\OpenGLInteraface\OpenGLTestBox\COpenGLTestBox.cpp" />
     <ClCompile Include="scripts\OpenGLInteraface\Shader.cpp" />
   </ItemGroup>
   <ItemGroup>

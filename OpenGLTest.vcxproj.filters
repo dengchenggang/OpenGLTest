@@ -1785,6 +1785,18 @@
     <ClInclude Include="scripts\OpenGLInteraface\COpenGLContext.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="scripts\OpenGLInteraface\OpenGL2DRect\COpenGL2DRectData.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="scripts\OpenGLInteraface\OpenGLRectangle\COpenGLRectangle.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="scripts\OpenGLInteraface\OpenGLTestBox\COpenGLTestBox.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="scripts\OpenGLInteraface\OpenGL2DRect\COpenGL2DRect.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="OpenGL\glad\src\glad.c">
@@ -1812,6 +1824,15 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="scripts\OpenGLInteraface\COpenGLContext.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="scripts\OpenGLInteraface\OpenGLRectangle\COpenGLRectangle.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="scripts\OpenGLInteraface\OpenGLTestBox\COpenGLTestBox.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="scripts\OpenGLInteraface\OpenGL2DRect\COpenGL2DRect.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

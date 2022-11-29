@@ -4,9 +4,9 @@
 
 int main(int argc, char *argv[]) {
     auto opengl = std::make_shared<COpenGL2DRect>("Test");
-    opengl->SetVertextShader("./scripts/shader/vertex2DRectShader.glsl");
-    opengl->SetFragmentShader("./scripts/shader/fragment2DRectShader.glsl");
-    opengl->SetTexturePath("./scripts/data/resources/textures/container.jpg");
+    opengl->SetVertextShader("./scripts/resources/shader/vertex2DRectShader.glsl");
+    opengl->SetFragmentShader("./scripts/resources/shader/fragment2DRectShader.glsl");
+    opengl->SetTexturePath("./scripts/resources/textures/container.jpg");
     if (opengl->Init()) {
         while (opengl->Update()) {
 
